@@ -227,6 +227,13 @@ logo {
 }
 /* ----------------------------------------------------Mobile Design -----------------------------------------------*/
 @media screen and (max-width:850px) {
+    .item{
+        font-size:16px;
+    }
+    .start{
+        padding-right: 18px;
+        padding-left: 18px;
+    }
     .bigs-centered{
         font-size: 18px;
     }
