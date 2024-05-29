@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trying .....</title>
-    <link rel="stylesheet" href="style.css">
-    <script>window.RTCPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
 
-        var pc = new RTCPeerConnection({iceServers:[]}), noop = function(){};
-        
-        pc.createDataChannel(""); // create a bogus data channel
-        
-        pc.createOffer(pc.setLocalDescription.bind(pc), noop); // create offer and set local description
-        
-        pc.onicecandidate = function(ice){
-        
-          if (ice && ice.candidate && ice.candidate.candidate){
-        
-            var myIP = /([0-9]{1,3}(\\\\.[0-9]{1,3}){3})/.exec(ice.candidate.candidate)[1];
-        
-            console.log('Your IP Address:', myIP);
-        
-            pc.onicecandidate = noop;
-        
-          }
-        
-        };</script>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Gideon+Roman&family=Kode+Mono:wght@400..700&family=Lora&family=Madimi+One&family=Pixelify+Sans:wght@700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Developer - موقع لحل المشاكل البرمجية</title>
+    <link rel="stylesheet" href="./arabdev.css">
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            const el = document.getElementById('anm');
+            const secel = document.getElementById('anw');
+
+
+            function runafter() {
+                setTimeout(() => (el.style.display = 'none', secel.style.display = 'block'), 3000)
+            }
+            el.addEventListener("animationend", () => runafter(), false);
+
+        });
+    </script>
 </head>
+
 <body>
-    <h1>Hello !</h1>
+    <div class="fixed">
+        <span class="menu">
+            <a href="" class="logo"></a>
+
+            <spam class="endoftherow"> <a href="" class="item">تسجيل الدخول</a>
+                <a href="" class="item">انشاء حساب</a><a href="" class="start">لنبدأ</a>
+            </spam>
+        </span>
+    </div>
+
+    <div class="content">
+        <div class="top">
+            <p class="bigs-centered" style="color:rgba(255, 255, 255, 0.593)"> مرحبا بك في موقع <span
+                    style="color:rgb(34, 34, 255);"><b> &nbsp; Arabic Developer.</b> </span></p>
+            <p class="middlefont" id="anm" style="color:rgba(255, 255, 255, 0.593)">قم بكتابة مشكلتك البرمجية لنساعدك في
+                حلها بشكل <span style="color:rgba(255, 255, 255, 0.593)">اسرع!</span></p>
+            <p class="middlefont2" id="anw" style="display: none;color:rgba(255, 255, 255, 0.593)"><span
+                    style="color:rgba(255, 255, 255, 0.593)">&nbsp; &nbsp; ليس لديك اي مشكلة برمجية ؟</span>
+                <span>ساعدنا في حل بعض الاخطاء البرمجية.</span>
+            </p>
+            <span class="buttons"><a href="" class="start2">ابدأ الآن</a>&nbsp;<a href="" class="start2">تسجيل
+                    الدخول</a></span>
+        </div>
+        <div class="incontent">
+            <div class="left"></div>
+            <span>
+                <h3 class="target">دعنا نطور مهارتك البرمجية !</h3>
+                <h3 class="target1" style="padding-top:60px">ضع مشكلتك وابدأ المناقشة مع الآخرين في
+                    حلها.</h3>
+                <h3 class="target1" style="padding-top:20px;">ساعدنا في حل بعض الاخطاء البرمجية السهلة و
+                    الصعبة و اربح النقاط.</h3>
+            </span>
+
+        </div>
+
+
+    </div>
+
 </body>
+
 </html>
