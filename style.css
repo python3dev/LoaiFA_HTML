@@ -1,1 +1,328 @@
+/* IT'S A CLOSED RESOURCE CANNOT BE CHANGED  */
+/* COPYRIGHT 2024.6 */
+/* Programmer : Loai Khalid Maklad (EGYPT-DAMMITA) ! */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 
+}
+
+html {
+    height: 100%;
+}
+
+p,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+.fixed {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.menu {
+
+    display: flex;
+
+    height: 60px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.433);
+}
+
+.item,
+.logo {
+    padding-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    align-self: center;
+    background-image: url(./logo.ico);
+    width: 125px;
+
+    height: 45px;
+    padding-left: 0px;
+}
+
+.item,
+logo {
+    display: flex;
+    align-self: center;
+}
+
+.item {
+    font-size: 17px;
+    flex-direction: row-reverse;
+    padding-right: 14px;
+}
+
+.endoftherow {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    margin-top: 30px;
+    /* width: 818px; */
+}
+
+.start {
+    text-decoration: none;
+    color: #212529;
+    background-color: white;
+    border: 1px solid #212529;
+    margin-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 5px;
+}
+
+.start2 {
+    /* white-space: nowrap; */
+    margin-top: 30px;
+    text-decoration: none;
+    color: #2babe2;
+    background-color: transparent;
+    border: 1px solid #2babe2;
+    margin-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 4px;
+}
+
+.start:hover {
+    background-color: #212529;
+    color: white;
+}
+
+/* .start2:hover{
+    background-color: #3b9fc9;
+    color:white;
+} */
+.item:hover {
+    color: rgba(0, 0, 0, 0.413);
+
+}
+
+.content {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.top {
+    height: 560px;
+    flex-direction: column;
+    background-color: rgba(3, 3, 3, 0.712);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus {
+    background-color: rgb(73, 73, 73);
+    height: 200px;
+}
+
+.bigs-centered {
+    display: flex;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.middlefont,
+.middlefont2 {
+    margin-top: 30px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.middlefont {
+    animation: type 2s steps(60, end),
+        writing 0.7s step-end infinite;
+    border-left: 3px solid black;
+    padding-left: 10px;
+}
+
+.middlefont2 {
+    animation: typesec 2s steps(60, end),
+        writing 0.7s step-end infinite;
+    border-left: 3px solid black;
+    padding-left: 10px;
+
+}
+
+.incontent {
+
+    /* margin-top: 15px;
+    border-radius: 30px 30px 30px; */
+
+    /* padding-top: 40px; */
+
+    display: flex;
+
+    padding-right: 15px;
+
+    background-color: #622be2;
+
+    height: 250px;
+}
+
+.incontent span {
+    margin-left: auto;
+}
+
+.target {
+    color: #c7c7c7;
+    padding-top: 30px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.target1{
+    color: #c7c7c7;
+    letter-spacing: 1px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px; 
+    padding-top:60px
+}
+.left {
+    margin-left: 30px;
+    background: url("./setit.png");
+    width: 171px;
+    height: 171px;
+    align-self: center;
+
+    animation: moving 3s linear infinite;
+}
+/* ----------------------------------------------------Mobile Design -----------------------------------------------*/
+@media screen and (max-width:850px) {
+    .bigs-centered{
+        font-size: 24px;
+    }
+    .middlefont, .middlefont2{
+        font-size: 13px;
+        padding-left: 6px;
+    }
+
+    .middlefont{
+        animation: typesm 2s steps(60, end),
+        writing 0.7s step-end infinite;
+    }
+    .middlefont2{
+        animation: typesecsm 2s steps(60, end),
+        writing 0.7s step-end infinite;
+    }
+    .target{
+        font-size:18px;
+    }
+    .target1{
+        font-size: 12px;
+    }
+    .left{
+        background-image: url("./phonesetit.png");
+        width: 88px;
+        height: 75px;
+        background-repeat: no-repeat;
+    }
+}
+
+/* ---------------------------------Animations-------------------------------------- */
+@keyframes type {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 649px;
+
+    }
+
+}
+
+@keyframes typesec {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 779px;
+    }
+
+}
+
+@keyframes writing {
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-left: 3px solid black;
+    }
+}
+
+@keyframes moving {
+    from {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+
+}
+/* ------------------------------------------------Animation For Phone -------------------------------------*/
+@keyframes typesm {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 371px;
+
+    }
+}
+@keyframes typesecsm {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 446px;
+
+    }
+}
