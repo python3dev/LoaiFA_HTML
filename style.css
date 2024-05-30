@@ -1,6 +1,7 @@
 /* IT'S A CLOSED RESOURCE CANNOT BE CHANGED  */
 /* COPYRIGHT 2024.6 */
 /* Programmer : Loai Khalid Maklad (EGYPT-DAMMITA) ! */
+
 body {
     margin: 0;
     padding: 0;
@@ -175,7 +176,6 @@ logo {
         writing 0.7s step-end infinite;
     border-left: 3px solid black;
     padding-left: 10px;
-
 }
 
 .incontent {
@@ -226,14 +226,13 @@ logo {
     animation: moving 3s linear infinite;
 }
 /* ----------------------------------------------------Mobile Design -----------------------------------------------*/
-@media screen and (max-width:850px) {
+@media screen and (max-width:745px) {
     .item{
         font-size:13px;
         white-space: nowrap;
     }
     .start{
-        padding-right: 18px;
-        padding-left: 18px;
+        display: none;
     }
     .logo{
         margin-left: 20px;
@@ -274,6 +273,7 @@ logo {
     .start2{
         padding-left: 20px;
         padding-right:20px ;
+        font-size: 10px;
     }
 }
 
@@ -284,7 +284,7 @@ logo {
     }
 
     to {
-        width: 649px;
+        width: 630px;
 
     }
 
@@ -296,7 +296,7 @@ logo {
     }
 
     to {
-        width: 779px;
+        width: 720px;
     }
 
 }
