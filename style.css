@@ -12,7 +12,9 @@ body {
 html {
     height: 100%;
 }
-
+hr{
+    border: 0;
+}
 p,
 h3,
 h4,
@@ -127,7 +129,8 @@ logo {
 }
 
 .top {
-    height: 560px;
+
+    height: 100vh;
     flex-direction: column;
     background-color: rgba(3, 3, 3, 0.712);
     display: flex;
@@ -177,7 +180,10 @@ logo {
     border-left: 3px solid black;
     padding-left: 10px;
 }
-
+.thebig{
+    height: 550px;
+    background-color: #622be2;
+}
 .incontent {
 
     /* margin-top: 15px;
@@ -188,10 +194,6 @@ logo {
     display: flex;
 
     padding-right: 15px;
-
-    background-color: #622be2;
-
-    height: 250px;
 }
 
 .incontent span {
@@ -217,13 +219,22 @@ logo {
     padding-top:60px
 }
 .left {
-    margin-left: 30px;
-    background: url("./setit.png");
-    background-repeat: no-repeat;
-    width: 127px;
-    height: 127px;
-    align-self: center;
-    animation: moving 3s linear infinite;
+    animation: moving 3s infinite forwards;
+    width: 185px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.aboutus{
+    height: 220px;
+    background-color: #212529;
+    text-align: center;
+    
+}
+.r{
+    padding-top: 190px;
+    color: #c7c7c7;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* ----------------------------------------------------Mobile Design -----------------------------------------------*/
 @media screen and (max-width:745px) {
@@ -241,6 +252,7 @@ logo {
         background-image: url(./logosm.png);
         background-repeat: no-repeat;
     }
+
     .bigs-centered{
         font-size: 18px;
     }
@@ -264,17 +276,20 @@ logo {
         font-size: 12px;
     }
     .left{
-        background-image: url("./phonesetit.png");
-        width: 95px;
-        height: 75px;
-        background-repeat: no-repeat;
-        margin-left: 10px;
+        display: none;
     }
     .start2{
         padding-left: 20px;
         padding-right:20px ;
         font-size: 10px;
     }
+    .target1{
+        padding-top: 12px;
+    }
+    .r{
+        font-size: 12px;
+    }
+    
 }
 
 /* ---------------------------------Animations-------------------------------------- */
