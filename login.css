@@ -4,6 +4,11 @@
     border: 1px solid gray;
     color:gray;
 }
+.loginform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .email:focus{
     outline: none;
 }
