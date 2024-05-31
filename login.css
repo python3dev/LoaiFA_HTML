@@ -3,7 +3,11 @@ html{
     padding: 0;
     margin:0;
 }
-
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
 .email{
     height: 40px;
@@ -12,6 +16,7 @@ html{
     color:gray;
 }
 .loginform{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
